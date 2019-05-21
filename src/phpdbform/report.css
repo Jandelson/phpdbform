@@ -1,0 +1,60 @@
+BODY {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	background : White;
+}
+
+.row0 {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	background : #DCDCDC;
+	font-weight : bold;
+}
+
+.row1 {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #333399;
+	background : #FFFFF0;
+}
+
+.row2 {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #333399;
+	background : #F5FFFA;
+}
+
+.row3 {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #778899;
+	background : #FAFAFA;
+}
+
+.rowg {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	background : #F5F5F5;
+}
+
+.grouptitle {
+	color : Blue;
+	font-weight : bold;
+}
+
+A {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Blue;
+	text-decoration : none;
+}
+
+A:HOVER {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Red;
+}

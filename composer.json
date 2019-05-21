@@ -1,0 +1,36 @@
+{
+    "name": "phpdbform/phpdbform",
+    "description": "scripts PHP para ajudar a gerenciar um formulário html para os dados do banco de dados. com apenas algumas linhas de código php você obtém um formulário html. recursos: fácil gerenciamento, personalizações, listas suspensas fáceis e outros",
+    "homepage": "https://github.com/jandelson/phpdbform",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paulo Assis",
+            "email": "paulo@coral.srv.br"
+        },
+        {
+            "name": "Elton Minetto",
+            "email": "minetto@unochapeco.rct-sc.br"
+        },
+        {
+            "name": "Gilmar de Paula Fiocca",
+            "email": "gilmar@geweb.com.br"
+        },
+        {
+            "name": "Jandelson Oliveira",
+            "email": "jandelson_oliveira@yahoo.com.br",
+            "homepage": "https://about.me/oliveirajandelson"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "phpdbform\\": "src/phpdbform"
+        }
+    }
+}
