@@ -53,3 +53,6 @@ print $form->process();
 
 $db->close();
 ```
+By Packagist
+cd <your project>
+composer require 'phpdbform/phpdbform:dev-master'
