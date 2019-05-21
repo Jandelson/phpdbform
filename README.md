@@ -4,6 +4,7 @@ scripts PHP para ajudar a gerenciar um formulário html para os dados do adminis
 Projeto original: https://sourceforge.net/projects/phpdbform/
 
 Basic Usage
+```php
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -51,3 +52,4 @@ print $form->draw_submit('Enviar');
 print $form->process();
 
 $db->close();
+```
