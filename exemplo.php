@@ -5,7 +5,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 /**
  * Cria conexão com o banco de dados
  */
-$db = new phpdbform\phpdbform_pdo("sogamax", "localhost", "root", "admmysqlgeweb");
+$db = new phpdbform\phpdbform_pdo("phpdbform", "localhost", "root", "");
 $db->connect();
 
 /**
