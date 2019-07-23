@@ -14,12 +14,18 @@ class phpdbform_static_radiobox extends phpdbform_field
 {
     // array of value, text
     public $options = array();
+    public $elementoOrientacao = '<br>';
 
-    public function __construct($form_name, $field, $title, $options)
+    public function __construct($form_name, $field, $title, $options, $orientacao)
     {
         $this->form_name = $form_name;
         $this->field = $field;
         $this->title = $title;
+        $this->orientacao = $orientacao;
+        
+        if ($this->orientacao == 'h') {
+            $this->elementoOrientacao = '&nbsp';
+        }
         if (is_array($options)) {
             $this->options = $options;
         } else {
@@ -46,7 +52,7 @@ class phpdbform_static_radiobox extends phpdbform_field
             $javascript="";
         }
         if (!empty($this->title)) {
-            $ret = $this->title."<br>";
+            $ret = $this->title.$this->elementoOrientacao;
         } else {
             $ret = "";
         }
@@ -58,7 +64,7 @@ class phpdbform_static_radiobox extends phpdbform_field
             $checked = ($tok[1][0] == $this->value)?"checked":"";
             $ret .=
                 "<input type=\"radio\" class=\"{$this->cssclass}\" ".
-                "name=\"$this->key\" $id value=\"{$tok[1][0]}\" $checked $javascript {$this->tag_extra}>{$tok[1][1]}<br>\n";
+                "name=\"$this->key\" $id value=\"{$tok[1][0]}\" $checked $javascript {$this->tag_extra}>{$tok[1][1]}{$this->elementoOrientacao}\n";
         }
         return $ret;
     }

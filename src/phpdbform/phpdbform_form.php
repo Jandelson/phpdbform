@@ -72,9 +72,9 @@ class phpdbform_form
         $this->fields[$field] = new phpdbform_listbox($this->name, $field, $title, $db, $table, $key, $value, $order, $where);
     }
 
-    public function add_static_radiobox($field, $title, $options)
+    public function add_static_radiobox($field, $title, $options, $orientacao = 'v')
     {
-        $this->fields[$field] = new phpdbform_static_radiobox($this->name, $field, $title, $options);
+        $this->fields[$field] = new phpdbform_static_radiobox($this->name, $field, $title, $options, $orientacao);
     }
 
     public function add_date($field, $title, $dateformat)
