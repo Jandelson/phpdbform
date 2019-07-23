@@ -32,10 +32,15 @@ $form->draw_header();
 $form->add_textbox('nome', 'Nome:', 70, 0, true);
 $form->add_textarea('obs', 'Observações', 70, 5);
 $form->add_static_listbox('nomes', 'Contatos Adicionados', $nomes);
+
+$form->add_static_radiobox('genero_vertical', 'Genero: ', '1;Masculino,2;Feminino,3;Outros', 'v');
+$form->add_static_radiobox('genero_orizontal', 'Genero: ', '1;Masculino,2;Feminino,3;Outros', 'h');
 /**
  * Campo não faz parte da tabela então não faz update
  */
 $form->fields['nomes']->updatable = false;
+$form->fields['genero_vertical']->updatable = false;
+$form->fields['genero_orizontal']->updatable = false;
 /**
  * Display do formulario na tela
  */
@@ -44,7 +49,11 @@ echo "<br>";
 echo $form->fields['nome']->getString();
 echo "<br>";
 print $form->fields['obs']->getString();
+
+print "<h2>Elemento Radio Button</h2>";
+print $form->fields['genero_vertical']->getString();
 print "<br>";
+print $form->fields['genero_orizontal']->getString();
 /**
  * Criando submit
  */
